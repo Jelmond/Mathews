@@ -1,0 +1,65 @@
+@use '../../../assets/styles/index.scss' as *;
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: rm(7) rm(20);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    .left{
+        color: white;
+        font-size: font(40);
+        text-transform: uppercase;
+    }
+
+    .right{
+        display: flex;
+        align-items: center;
+
+        .list{
+            p{
+                font-size: font(40);
+                color: white;
+                border-bottom: 2px red solid;
+                padding: rm(0) rm(20);
+                transition: border-color .7s ease-in-out;
+
+                &:hover{
+                    border-color: rgba($color: red, $alpha: 0);
+                }
+            }
+        }
+
+        .input{
+            position: relative;
+
+            img{
+                position: absolute;
+                width: rm(30);
+                height: rm(30);
+                top: rm(10);
+                left: rm(-35);
+            }
+
+            input{
+                border: none;
+                background: none;
+                border-bottom: 2px red solid;
+                padding-bottom: rm(13);
+                padding-top: rm(13);
+                font-size: font(20);
+                color: white;
+                transition: border-color .7s ease-in-out;
+
+                &:focus{
+                    border-color: rgba($color: red, $alpha: 0);
+                }
+            }
+        }
+    }
+}
