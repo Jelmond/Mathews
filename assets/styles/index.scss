@@ -2,3 +2,8 @@
 @forward '_typography' hide $fonts;
 @forward '_grid' hide $breakpoints, $grid, generate-grid, $breakpoints-fonts;
 @forward '_functions' hide $font-base;
+
+@mixin horizontal-padding {
+    padding-left: 15%;
+    padding-right: 3%;
+}

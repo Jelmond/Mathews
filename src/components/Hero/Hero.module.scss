@@ -1,0 +1,47 @@
+@use '../../../assets/styles/index.scss' as *;
+
+.container {
+    @include horizontal-padding;
+    padding-top: 200px;
+    padding-bottom: 70px;
+
+    background: linear-gradient(83deg, #A683EF 35.15%, rgba(156, 121, 227, 0.92) 66.88%);
+    display: flex;
+    gap: 20px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    
+    color: #FFF;
+    align-items: start;
+    max-width: 50%;
+
+    h1 {
+        font-size: 48px;
+        font-weight: 600;
+    }
+    p {
+        font-size: 24px;
+        font-weight: 500px;
+    }
+
+    button {
+        border-radius: 12px;
+        border: 2px solid rgba(255, 255, 255, 0.60);
+        background: var(--Button-st, linear-gradient(284deg, #FF7272 17.04%, #FFC46C 72.48%));
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+        font-size: 26px;
+        font-weight: 500;
+        padding: 1em 2em;
+        cursor: pointer;
+    }
+}
+
+.heroImg {
+    height: 570px;
+}
+

@@ -1,31 +1,37 @@
 @use '../../../assets/styles/index.scss' as *;
 
 .header{
+    @include horizontal-padding;
+    padding-top: 80px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: rm(7) rm(20);
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1000;
+    color: black;
 
     .left{
-        color: white;
-        font-size: font(40);
+        font-size: 24px;
         text-transform: uppercase;
+        font-weight: 500;
+        .leftContent {
+            display: flex;
+            align-items: center;
+            gap: 0.25em;
+        }
     }
 
     .right{
         display: flex;
         align-items: center;
-
+        gap: 50px;
         .list{
             p{
-                font-size: font(40);
-                color: white;
-                border-bottom: 2px red solid;
+                font-size: 17px;
                 padding: rm(0) rm(20);
                 transition: border-color .7s ease-in-out;
 

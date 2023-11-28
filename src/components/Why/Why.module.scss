@@ -1,0 +1,46 @@
+@use '../../../assets/styles/index.scss' as *;
+
+
+.container {
+    @include horizontal-padding;
+    padding-top: 45px;
+    padding-bottom: 145px;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    background-color: white;
+}
+
+.heading {
+    font-size: 36px;
+    font-weight: 400;
+    max-width: 40%;
+}
+
+.perks {
+    display: flex;
+    align-items: center;
+    gap: 8em;
+}
+
+.perk {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    img {
+        height: 115px;
+    }
+    div {
+        max-width: 250px;
+        h5 {
+            font-size: 22px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+    
+        p {
+            font-size: 14px;
+        }
+    }
+}

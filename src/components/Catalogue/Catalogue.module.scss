@@ -1,0 +1,53 @@
+@use '../../../assets/styles/index.scss' as *;
+
+.container {
+    color: #FFF;
+    background: #A5B4F7;
+
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-inline: 15%;
+}
+
+.heading {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.categories {
+    display: flex;
+    margin-bottom: 70px;
+    gap: 3em;
+}
+
+.category {
+    border-radius: 26px;
+    border: 3px solid #FFF;
+    font-size: 24px;
+    padding: 0.5em 1.5em;
+    cursor: pointer;
+
+    &.selected {
+        background: var(--Button-st, linear-gradient(284deg, #FF7272 17.04%, #FFC46C 72.48%));
+        border: none;
+    }
+}
+
+.moreBtn {
+    border-radius: 8px;
+    border: 3px solid #FFF;
+
+    background: #606060;
+
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 0.5em 1em;
+    cursor: pointer;
+
+    display: block;
+    margin-inline: auto;
+    margin-top: 50px;
+}
