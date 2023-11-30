@@ -1,0 +1,45 @@
+@use '../../../assets/styles/index.scss' as *;
+
+.container {
+    @include horizontal-padding;
+    background: #A5B4F7;
+    min-height: 80vh;
+    padding-top: 200px;
+    padding-bottom: 70px;
+    
+}
+
+.searchResult {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5em;
+}
+
+.inputContainer {
+    margin-bottom: 3em;
+    display: flex;
+    gap: 2em;
+    input {
+        font-size: 1.5em;
+        padding: 0.6em 1.2em;
+        border-radius: 0.3em;
+    }
+
+    div {
+        padding: 0.5em 1em;
+        background-color: white;
+        border-radius: 0.3em;
+        display: flex;
+        align-items: center;
+        gap: 1.5em;
+        img {
+            height: 60%;
+        }
+        button {
+            color: white;
+            background-color: #A684F0;
+            padding: 1em 2em;
+            border-radius: 0.25em;
+        }
+    }
+}

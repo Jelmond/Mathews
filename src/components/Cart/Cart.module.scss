@@ -1,0 +1,12 @@
+@use '../../../assets/styles/index.scss' as *;
+
+.container {
+    @include horizontal-padding;
+    background: #A5B4F7;
+    min-height: 80vh;
+    padding-top: 200px;
+    padding-bottom: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5em;
+}

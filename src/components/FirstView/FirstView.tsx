@@ -5,7 +5,6 @@ import Hero from '../Hero/Hero'
 import Why from '../Why/Why'
 import Catalogue from '../Catalogue/Catalogue'
 import Mixes from '../Mixes/Mixes'
-import Footer from '../Footer/Footer'
 
 export default function FirstView() {
 
@@ -16,7 +15,6 @@ export default function FirstView() {
             <Catalogue />
             <h3 className={styles.mixes}>Подборки пластинок</h3>
             <Mixes />
-            <Footer />
         </div>
     )
 }

@@ -5,6 +5,13 @@
     background-color: #fff;
     border-radius: 40px;
     color: #000;
+    border: 2px solid white;
+    transition: border-color .7s ease-in-out;
+    cursor: pointer;
+
+    &:hover{
+        border-color: #1DAEFF;
+    }
 }
 
 .cardImg {
